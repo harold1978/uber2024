@@ -9,6 +9,10 @@
 }
 html{
     font-size: 62.5%;
+    box-sizing: border-box;/* manejar el padding para que no aumente el tamaño de la box*/
+}
+*,*:after,*:before{/* manejar el padding para que no aumente el tamaño de la box*/
+    box-sizing: inherit;
 }
 body{
     font-size: 1rem;
@@ -60,4 +64,33 @@ body{
     border-radius: 2rem;
     padding: 1rem;
     box-shadow: 0px 5px 15px 0px var(--negro);/*sombra del cuadro de los servicios*/
+}
+.banner{
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+    height: 45rem;
+    padding: 2rem;
+    position: relative;
+}
+.contenido_banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: var(--blanco);
+    background-color: rgba(0, 0, 0, .5);/*sombra de la imagen banner*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contenido_banner h2{/*tamaño fuente de titulo del banner*/
+    font-size: 2.5rem;
+}
+.contenido_banner p{/*tamaño fuente de parrafo del banner*/
+    font-size: 1.5rem;
 }
