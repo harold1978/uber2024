@@ -8,7 +8,7 @@
     --anaranjado:#d16f1e;
 }
 html{
-    font-size: 10px;
+    font-size: 62.5%;
 }
 body{
     font-size: 1rem;
@@ -23,8 +23,19 @@ body{
 }
 .navegacion_principal{
     display: flex;
-    justify-content:space-around;
+    flex-direction: column;
+    align-items: center;
+    
     background-color: var(--azul);
+}
+
+@media(min-width:768px) {
+    .navegacion_principal{
+        flex-direction: row;
+        justify-content:space-around;
+        background-color: var(--amarillo);
+    }
+    
 }
 .navegacion_principal a{
     color: var(--blanco);
@@ -39,6 +50,6 @@ body{
     color: var(--negro);
 }
 .contenedor{
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
