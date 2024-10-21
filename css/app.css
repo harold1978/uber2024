@@ -13,6 +13,8 @@ html{
 body{
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to top, var(--rojo) 5%,var(--gris)100%);
+
 
 }
 .titulo_principal{
