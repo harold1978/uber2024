@@ -13,7 +13,7 @@ html{
 body{
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(to top, var(--rojo) 5%,var(--gris)100%);
+    background-image: linear-gradient(to top, var(--rojo) 5%,var(--gris)100%);/*fondo gradiante*/
 
 
 }
@@ -27,15 +27,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     background-color: var(--azul);
+    border-radius: 1rem; /*redondeo de barra navegacion*/
 }
 
 @media(min-width:768px) {
     .navegacion_principal{
         flex-direction: row;
-        justify-content:space-around;
-        background-color: var(--amarillo);
+        justify-content:space-around;    
     }
     
 }
@@ -45,11 +44,12 @@ body{
     font-size: 2rem;
     font-weight: bold;
     padding: 1rem;
+
 }
 
 .navegacion_principal a:hover{
-    background-color: var(--anaranjado);
-    color: var(--negro);
+    background-color: var(--gris);
+   
 }
 .contenedor{
     max-width: 120rem;
